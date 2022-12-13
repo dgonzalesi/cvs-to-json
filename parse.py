@@ -14,4 +14,5 @@ with open ("EjemploCSV.csv", 'r') as f:
             for i in range(len(index)):
                 data[list(data.keys())[i]] = index[i]
 
-print(data)
+with open("EjemploJSON.json", "w") as f:
+    json.dump(data, f, indent=4)
